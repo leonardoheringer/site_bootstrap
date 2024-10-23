@@ -39,18 +39,33 @@
                             </ul>
                         </li>
                     </ul>
-                    <form class="d-flex pe-3" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success pe-3" type="submit">Search</button>
-                    </form>
+                    <div class="d-flex pe-5">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            Fale Conosco
+                          </button>
+                        </div>
                 </div>
             </nav>
         </div>
     </header>
+    
     <main>
 
         <div class="container-fluid">
-
+            <nav aria-label="breadcrumb " style="height: 40px;">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item text-light"><a href="#">Home</a></li>
+                  <li class="   crumb-item active" aria-current="page">Library</li>
+                </ol>
+              </nav>
+              
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="Principal.html">Inicio</a></li>
+                  <li class="breadcrumb-item"><a href="#">Produtos</a></li>
+                  <li class="breadcrumb-item"><a href="Acompanhamentos.html">Acompanhamentos</a></li>
+                </ol>
+              </nav>
             <div class="cardapio mt-5 ">
                 <div class="row">
 
@@ -69,8 +84,8 @@
                                     data-bs-target="...">
                                     R$: 21,00
                                 </button>
-                                <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
-                                    data-bs-target="...">
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                    data-bs-target="#info_adicionar">
                                     Comprar
                                 </button>
 
@@ -87,7 +102,7 @@
                                                     aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body text-dark">
-                                                <h5>250gramas Batata frita crinkle sequinha</h3>
+                                                <h5>250 gramas Batata frita crinkle sequinha</h3>
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary"
@@ -116,10 +131,10 @@
                                     data-bs-target="...">
                                     R$: 25,00
                                 </button>
-                                <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
-                                    data-bs-target="...">
-                                    Comprar
-                                </button>
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                data-bs-target="#info_adicionar">
+                                Comprar
+                            </button>
 
                                 <!-- Modal -->
                                 <div class="modal fade " id="info_onionrings" data-bs-backdrop="static"
@@ -164,10 +179,10 @@
                                     data-bs-target="...">
                                     R$: 28,00
                                 </button>
-                                <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
-                                    data-bs-target="...">
-                                    Comprar
-                                </button>
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                data-bs-target="#info_adicionar">
+                                Comprar
+                            </button>
 
                                 <!-- Modal -->
                                 <div class="modal fade " id="info_gouda" data-bs-backdrop="static"
@@ -216,8 +231,8 @@
                                     data-bs-target="...">
                                     R$: 29,00
                                 </button>
-                                <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
-                                    data-bs-target="...">
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                    data-bs-target="#info_adicionar">
                                     Comprar
                                 </button>
 
@@ -264,8 +279,8 @@
                                     data-bs-target="...">
                                     R$: 32,00
                                 </button>
-                                <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
-                                    data-bs-target="...">
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                    data-bs-target="#info_adicionar">
                                     Comprar
                                 </button>
 
@@ -312,10 +327,10 @@
                                     data-bs-target="...">
                                     R$: 29,00
                                 </button>
-                                <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
-                                    data-bs-target="...">
-                                    Comprar
-                                </button>
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                data-bs-target="#info_adicionar">
+                                Comprar
+                            </button>
 
                                 <!-- Modal -->
                                 <div class="modal fade " id="info_dadinho" data-bs-backdrop="static"
@@ -349,8 +364,30 @@
 
                     </div>
                 </div>
-
             </div>
+            <div class="modal fade " id="info_adicionar" data-bs-backdrop="static"
+            data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 k text-dark" id="staticBackdropLabel">
+                            Realizado com Sucesso</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-dark">
+                        <h2>Produto adicionado ao carrinho!</h2>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary"
+                            data-bs-dismiss="modal"><h5>Voltar</h5></button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
 
     </main>
